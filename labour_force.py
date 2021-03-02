@@ -1,8 +1,12 @@
 def labour_force(pid, vectors, periods):
     """
     Labour Force data graber (in fact.... probably works with all Stats Canada tables)
-    Provide table id (8 charachters), desired vectors and number of periods to get a handy tidy dataframe.
+    Provide table id (8 charachters), desired vectors and number of periods to get a handy tidy data dataframe.
     Note: one each vector sends three POST requests to Stats Canada, so ideally to be used for smaller one-off data requests.
+    
+    pid: int, the 8-digit table ID
+    vectors: list of ints,
+    periods: int, number of desired reference periods
     """
     df = []
 
