@@ -17,7 +17,7 @@ The function will retrieve the data values, dimensions values and dimensions (to
 ## About isolating data using vectors:
 
 > What is a vector?
-> > Unique variable length reference code time-series identifier, consisting of the letter 'V', followed by up to 10 digits. (i.e. V1234567890, V1, etc.)
+> > Unique variable length reference code time-series identifier, consisting of the letter 'V', followed by up to 10 digits. (i.e. V1234567890, V1, etc.)<br>
 > > More info here: https://www.statcan.gc.ca/eng/developers/csv/user-guide
 
 ## More
