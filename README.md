@@ -18,6 +18,7 @@ The function will retrieve the data values, dimensions values and dimensions (to
 
 > What is a vector?
 > > Unique variable length reference code time-series identifier, consisting of the letter 'V', followed by up to 10 digits. (i.e. V1234567890, V1, etc.)
+> > More info here: https://www.statcan.gc.ca/eng/developers/csv/user-guide
 
 ## More
 Many of the time-series data available from Statistics Canada have individual vector codes. These vector codes follow a naming format of a lower-case “v” and an identifying numbers. Time-series tables will often bundle many series together, resulting in large and sometimes unwieldy files. Many users of Canadian statistical data, who are often concerned with specific time series such as the CPI or international arrivals, will typically know the exact series they need. For this reason, the cansim package also provides two functions to make it easier to retrieve individual vectors: get_cansim_vector() and get_cansim_vector_for_latest_periods().
