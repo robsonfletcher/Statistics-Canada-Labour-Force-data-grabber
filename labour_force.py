@@ -8,7 +8,7 @@ def labour_force(pid, vectors, periods):
     vectors: list of ints,
     periods: int, number of desired reference periods
     """
-    df = []
+    lists = []
 
     for vector in vectors:
 
@@ -36,6 +36,9 @@ def labour_force(pid, vectors, periods):
             vals = [json.loads(rrr.text)[0]['object']['vectorDataPoint'][i]['refPer']] + [json.loads(rrr.text)[0]['object']['vectorDataPoint'][i]['value']]
             rows = dim_values + vals
 
-            df.append(rows)
+            lists.append(rows)
+            
+            df = pd.DataFrame(lists, columns=dimensions)
+            df['Date'] = pd.to_datetime(df['Date'])
 
-    return pd.DataFrame(df, columns=dimensions)
+    return df
