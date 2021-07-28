@@ -2,7 +2,7 @@
 Easy function for quickly getting tidy data of any Labour Force data table.
 Script should also work on any Table within Statistics Canada's data repositories.
 
-Note: this is a terribly inefficient way for gathering large datasets as each desired vector
+Note: this is a terribly inefficient way of gathering very large datasets as each desired vector
 send three POST requests to Stast Canada. So.... this is a work in progress. But was done in haste
 to get a project off the ground quickly.
 
